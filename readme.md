@@ -1,25 +1,47 @@
 Speechace Speaking Assessment Report (Clone)
 📌 Project Overview
 
-This project is a Speechace-style Speaking Test Report Page built as part of a Full Stack Development assignment.
+This project is a Speechace-style Speaking Test Report Page developed as part of a Full Stack Development assignment.
 
-The application displays:
+The application replicates the core experience of a speaking assessment report by presenting student performance data in a clear, structured, and interactive UI.
 
-Student speaking assessment scores
+⚠️ This project is a functional prototype created for evaluation purposes and is not intended for production use.
 
-Skill-wise breakdown (Pronunciation, Fluency, Vocabulary, Grammar)
+✨ Features
 
-Tab-based score switching (Speechace / CEFR / IELTS)
+Display of overall speaking score
 
-Descriptive feedback
+Skill-wise score breakdown
 
-Per-question transcript with auto-generated speech audio
+Pronunciation
 
-Fluency metrics like Words Per Minute and Bad Pauses
+Fluency
 
-This is a functional prototype, not a production system.
+Vocabulary
 
-🛠️ Tech Stack Used
+Grammar
+
+Tab-based score switching
+
+Speechace
+
+CEFR
+
+IELTS
+
+Dynamic descriptive feedback based on score ranges
+
+Per-question transcript and feedback
+
+Auto-generated speech audio using browser Text-to-Speech
+
+Fluency metrics such as:
+
+Words Per Minute (WPM)
+
+Bad Pauses
+
+🛠️ Tech Stack
 Frontend
 
 HTML
@@ -34,7 +56,7 @@ Node.js
 
 Express.js
 
-JSON (as data source)
+JSON (used as a data source)
 
 Other
 
@@ -54,21 +76,21 @@ speechace-clone/
     └── script.js
 
 ▶️ How to Run the Project
-1️⃣ Start Backend Server
+1️⃣ Start the Backend Server
 cd backend
 npm install
 node server.js
 
 
-Backend will run on:
+The backend will run on:
 
 http://localhost:5000
 
-2️⃣ Run Frontend
+2️⃣ Run the Frontend
 
-Open frontend/index.html in your browser
+Open frontend/index.html in any modern browser
 
-No build step required
+No build or bundling step is required
 
 📊 Data Source
 
@@ -77,48 +99,10 @@ All report data is stored in:
 backend/data.json
 
 
-This includes:
+This file contains:
 
 Student details
 
 Score data for Speechace / IELTS / CEFR
 
 Question transcripts and fluency metrics
-
-No database is used.
-
-🔁 Summary of Scores (Tab Switching)
-
-Tabs like Speechace, CEFR, and IELTS are displayed
-
-Clicking a tab dynamically updates:
-
-Overall score
-
-Skill-wise progress bars
-
-Feedback content
-
-All data is fetched from the backend API
-
-🧠 Feedback Logic
-
-Feedback is displayed dynamically based on score values:
-
-Score ≥ 8 → Excellent performance
-
-Score between 6–7 → Good performance with minor inaccuracies
-
-Score < 6 → Needs improvement
-
-Feedback updates automatically when the selected tab changes.
-
-🔊 Audio & Transcript Feature
-
-No audio files are stored or uploaded
-
-Audio is generated automatically using Browser Text-to-Speech
-
-Clicking the play button reads the transcript aloud
-
-This keeps the backend simple and avoids media storage
