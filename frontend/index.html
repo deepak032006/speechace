@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Speechace Speaking Test Report</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+  <h1 class="title">Speechace Speaking Tests Report</h1>
+
+  <div class="candidate">
+    <div>
+      <h2 id="name"></h2>
+      <p id="date"></p>
+      <a href="#">Report link (shareable)</a>
+    </div>
+  </div>
+
+  <h3>Summary of scores</h3>
+
+  <div class="tabs">
+    <span class="tab active" data-type="speechace">Speechace</span>
+    <span class="tab" data-type="cefr">CEFR</span>
+    <span class="tab" data-type="ielts">IELTS</span>
+  </div>
+
+  <div class="summary">
+    <div class="shield">
+      <div class="shield-header">Speechace</div>
+      <div class="shield-score" id="overall"></div>
+    </div>
+
+    <div class="bars">
+      <div class="bar">
+        <label>Pronunciation <span id="pScore"></span></label>
+        <div class="track"><div id="pBar" class="fill green"></div></div>
+      </div>
+
+      <div class="bar">
+        <label>Fluency <span id="fScore"></span></label>
+        <div class="track"><div id="fBar" class="fill green"></div></div>
+      </div>
+
+      <div class="bar">
+        <label>Vocabulary <span id="vScore"></span></label>
+        <div class="track"><div id="vBar" class="fill orange"></div></div>
+      </div>
+
+      <div class="bar">
+        <label>Grammar <span id="gScore"></span></label>
+        <div class="track"><div id="gBar" class="fill orange"></div></div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Descriptive feedback</h3>
+  <div id="feedback"></div>
+  <h3>Per question transcript and feedback</h3>
+
+<div id="questions"></div>
+</div>
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

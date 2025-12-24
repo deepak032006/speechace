@@ -1,0 +1,166 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+.page {
+  max-width: 900px;
+  background: #fff;
+  margin: auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.candidate {
+  padding: 20px 0;
+}
+
+.summary {
+  display: flex;
+  gap: 30px;
+}
+
+.shield {
+  width: 180px;
+  background: #7dbb2f;
+  border-radius: 0 0 90px 90px;
+  color: #fff;
+  text-align: center;
+}
+
+.shield-header {
+  background: #0aa4d6;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.shield-score {
+  font-size: 40px;
+  margin: 40px 0;
+}
+
+.bars {
+  flex: 1;
+}
+
+.bar {
+  margin-bottom: 20px;
+}
+
+label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.track {
+  background: #ddd;
+  height: 8px;
+  border-radius: 4px;
+}
+
+.fill {
+  height: 8px;
+  border-radius: 4px;
+}
+
+.green { background: #7dbb2f; }
+.orange { background: #f5a623; }
+
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #eee;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.tab.active {
+  background: #0aa4d6;
+  color: #fff;
+}
+
+#feedback p {
+  margin-bottom: 15px;
+}
+.question-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.q-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.q-metrics {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.metric {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wpm {
+  background: #4c6b1f;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 50%;
+}
+
+.bad {
+  color: #f5a623;
+  font-weight: bold;
+}
+
+.transcript {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.play-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 2px solid #4c6b1f;
+  color: #4c6b1f;
+  font-size: 20px;
+  cursor: pointer;
+  background: none;
+}
+
+.text {
+  line-height: 1.6;
+}
+
+.cefr {
+  background: #dff2a6;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
